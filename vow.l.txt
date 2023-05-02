@@ -1,0 +1,15 @@
+%{
+  int vow_count=0;
+  int const_count=0;
+%}
+[aeiouAEIOU]+ {vow_count++;}
+.+ {const_count++;}
+%%
+int yywrap(){}
+int main()
+{
+printf"enter the string of vowels and constants:");
+print{"no of vowels are: %d\n",vow_count);
+print{"no of constants are: %d\n",count);
+return 0;
+}
